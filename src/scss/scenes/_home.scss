@@ -1,0 +1,10 @@
+.home-page {
+  .section-hero {
+    align-items: flex-end;
+    padding-bottom: 165px;
+    @include media-breakpoint-down('md') {
+      height: 700px;
+      padding-bottom: 100px;
+    }
+  }
+}

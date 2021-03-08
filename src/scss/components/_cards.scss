@@ -1,0 +1,147 @@
+.card-information {
+  .featured-image {
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    padding-bottom: 70%;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(black, 0.4);
+    }
+  }
+  .card-body {
+    padding: 30px;
+  }
+}
+
+.card-application {
+  .featured-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 5px;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(black, 0.4);
+      border-radius: 5px;
+    }
+  }
+}
+
+.card-value {
+  margin-bottom: 20px;
+  .featured-image {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 625px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    .hover-content {
+      display: none;
+    }
+    &:hover {
+      .hover-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(black, 0.4);
+          border-radius: 10px;
+        }
+        .icon {
+          position: relative;
+          margin-bottom: 60px;
+          z-index: 1;
+        }
+        .item {
+          position: relative;
+          z-index: 1;
+          margin-bottom: 20px;
+          font-size: $font-size-md;
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+  .card-title {
+    text-align: center;
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+  }
+}
+
+.card-certified {
+  &.active {
+    .featured-image {
+      border-top: 3px solid $primary;
+    }
+    .content {
+      border-bottom: 5px solid $primary;  
+    }
+  }
+  .featured-image {
+    border-top: 3px solid rgba($primary, 0.5);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 470px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(black, 0.3);
+    }
+  }
+  .card-body {
+    padding: 0 20px;
+    .content {
+      position: relative;
+      z-index: 2;
+      margin-top: -90px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 54px 20px;
+      background-color: $white;
+      text-align: center;
+      border-bottom: 5px solid rgba($primary, 0.5);  
+      .title {
+        font-size: 30px;
+        font-weight: $font-weight-medium;
+        margin-bottom: 45px;
+      }
+      .text {
+        font-size: 16px;
+        color: $gray;
+        margin-bottom: 36px;
+      }
+    }
+  }
+}

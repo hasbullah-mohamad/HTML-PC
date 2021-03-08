@@ -1,0 +1,33 @@
+.location-item {
+  width: 100%;
+  padding: 17px;
+  font-size: 26px;
+  color: $primary;
+  font-weight: $font-weight-medium;
+  background-color: white;
+  border-bottom: 5px solid $primary;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+  .icon {
+    position: absolute;
+    right: 24px;
+    top: 20px;
+  }
+  .click-item {
+    &[aria-expanded="true"] {
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.service-item {
+  .featured-image {
+    background-position: center;
+    background-size: cover;
+    height: 0;
+    padding-bottom: 60%;
+  }
+}
